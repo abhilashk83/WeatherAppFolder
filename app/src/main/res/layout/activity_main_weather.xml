@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87ceeb"
+    tools:context="com.example.abhilashk.myweatherapp.MainWeatherActivity">
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cityName"
+        android:layout_centerHorizontal="true"
+        android:text="Condition"
+        android:layout_marginTop="15dp"
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iconThumb"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/condition"
+        />
+
+
+
+    <TextView
+        android:id="@+id/temperatureCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_below="@id/iconThumb"
+        android:layout_centerHorizontal="true"
+        android:textSize="60sp"
+        android:layout_marginTop="10dp"
+        android:text="12 Degress"/>
+    <TextView
+        android:id="@+id/windCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temperatureCurrent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="wind"
+        android:textColor="#fff"
+        />
+
+     <TextView
+        android:id="@+id/humidityCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/windCurrent"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="10dp"
+        android:text="Humidity"
+        android:textColor="#fff"
+        />
+
+    <TextView
+        android:id="@+id/sunrise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/humidityCurrent"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="10dp"
+        android:text="sunrise"
+        android:textColor="#fff"
+        />
+
+    <TextView
+        android:id="@+id/sunset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sunrise"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="10dp"
+        android:text="sunset"
+        android:textColor="#fff"
+        />
+
+</RelativeLayout>
